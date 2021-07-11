@@ -1,0 +1,4 @@
+db:
+  connection : H2
+  hostOne : local
+  portTwo : 808

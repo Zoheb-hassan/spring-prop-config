@@ -1,0 +1,15 @@
+my:
+  resp.message : Hello World!
+  desc.message : ${my.resp.message}, this an external message
+  list.values : One , Two, Three, Four
+  key.vals : "{abc:'xyz', def:'ghi'}"
+  home : file:///d:/config-server-properties
+
+db:
+  connection : http
+  hostOne : myHost
+  portTwo : 8080
+
+management.endpoints.web.exposure.include : "*"
+spring.config.import : optional:configserver:http://localhost:8888/
+spring.application.name : prop-app
